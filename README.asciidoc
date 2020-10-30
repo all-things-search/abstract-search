@@ -1,8 +1,8 @@
-= picturesafe-search
+= abstract-search
 
 == An Elasticsearch service wrapper
 
-picturesafe-search is a Java service wrapper for the search engine Elasticsearch.
+abstract-search is a Java service wrapper for the search engine Elasticsearch.
 
 It allows the fast, flexible and easy integration of Elasticsearch functions into new or existing Java applications.
 
@@ -94,19 +94,19 @@ SearchResult searchResult = elasticsearchService.search("picturesafe-search-samp
     SearchParameter.builder().sortOptions(SortOption.desc("id")).build());
 ----
 
-As you can see, picturesafe-search focuses more on WHAT to search for than on HOW to search it and abstracts some complexity.
+As you can see, abstract-search focuses more on WHAT to search for than on HOW to search it and abstracts some complexity.
 
 == Getting started
 
 Only a few steps are necessary to get started with a standard configuration.
-A complete code example can be found https://github.com/picturesafe/picturesafe-search-samples[here].
-If you want to create a Spring Boot application, you can alternatively use the https://github.com/picturesafe/picturesafe-search-starter[picturesafe-search Starter].
+A complete code example can be found https://github.com/all-things-search/abstract-search-samples[here].
+If you want to create a Spring Boot application, you can alternatively use the https://github.com/all-things-search/abstract-search-starter[abstract-search Starter].
 
 For more information, please see following https://picturesafe-search.io/docs/[documentation].
 
 === Start Elasticsearch
 
-picturesafe-search requires a running Elasticsearch server from version 7.x.
+abstract-search requires a running Elasticsearch server from version 7.x.
 
 ==== Local installation of Elasticsearch
 
@@ -130,7 +130,7 @@ As an alternative to installing Elasticsearch you can run it in a Docker contain
 
 === Include java library
 
-Add the current version of the picturesafe-search library to your project.
+Add the current version of the abstract-search library to your project.
 
 .Maven dependency
 [source,xml]
@@ -250,7 +250,7 @@ public class GettingStarted {
 }
 ----
 
-With implementations of the picturesafe-search `Expression`-Interface complex terms of different search conditions can be easily defined.
+With implementations of the abstract-search `Expression`-Interface complex terms of different search conditions can be easily defined.
 
 Here are some examples:
 
